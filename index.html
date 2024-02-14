@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>현규에게♥</strong>
+              <p>
+                오늘이 무슨날이냐구~?? 까먹었을 줄 알았지?? 전혀 안까먹었지!
+                나같은 이벤트 중독자가 발렌타인 데이를 까먹는건 말이 안되는
+                거야!! 그래서 그냥 평범한 발렌타인 데이는 재미가 없으니까 아주
+                간단한 편지를 만들어봤엉 ㅋㅋㅋ!! 별건 아니지만 좀 재밌지 않앙??
+                ㅎㅎ 히히 근데 오빠는 초콜릿 싫어하니까 그냥 이걸로 선물줄겡!!
+                음ㅁ 초콜릿에 의미가 있으려낭... 근데 우리가 만나서 주는
+                초콜릿이 의미가 있지.. 그냥 이렇게 보내는게 의미가 있을까 행
+                ㅠㅠ 흑 ㅠㅠ 그니까 그냥 오빠가 자주 쓸거같은 cu 기프트콘 보낼랭
+                오빤 일신 cu 자주 가니까 잘 쓸거라고 생각행 !! ㅎㅎ
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="heart"></div>
+      </div>
+    </div>
+    <script>
+      const envelope = document.querySelector(".envelope-wrapper");
+      envelope.addEventListener("click", () => {
+        envelope.classList.toggle("flap");
+      });
+    </script>
+  </body>
+</html>
